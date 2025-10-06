@@ -4,13 +4,16 @@ import "./home.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Accordion from "react-bootstrap/Accordion";
 import Footer from "../../Components/Footer/Footer";
+import Hero from "../../assets/Hero Image.png";
+import WebMob from "../../assets/image 2.png";
+import Consult from "../../assets/image 1.png";
 
 export default function Home() {
     return (
         <>
             <Navbar />
             <section className={style.Hero}>
-                <img src="./src/assets/Hero Image.png" alt="Hero Image" />
+                <img src={Hero} alt="Hero Image" />
                 <div className={style.heroInfo}>
                     <h1>
                         We Crush Your Competitors, Goals, 
@@ -21,7 +24,7 @@ export default function Home() {
             </section>
             <section className={style.Services}>
                 <div className={style.serviceItem}>
-                    <img src="./src/assets/image 2.png" alt="Web and Mobile" />
+                    <img src={WebMob} alt="Web and Mobile" />
                     <div className={style.serviceInfo}>
                         <h2>Web & Mobile App Development</h2>
                         <p>
@@ -45,7 +48,7 @@ export default function Home() {
                         </p>
                         <button>LEARN MORE</button>
                     </div>
-                    <img src="./src/assets/image 1.png" alt="Consulting" />
+                    <img src={Consult} alt="Consulting" />
                 </div>
                 <div className="accordion-faq">
                     <h2>Frequently asked questions</h2>

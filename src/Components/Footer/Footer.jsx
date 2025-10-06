@@ -1,11 +1,12 @@
 import style from "./footer.module.css"
+import ATD from "../../assets/Logo.png"
 
 export default function Footer() {
     return (
         <footer>
             <div className={style.footInfo}>
                 <div className={style.footCompany}>
-                    <img src="./src/assets/Logo.png" alt="AT Digital" />
+                    <img src={ATD} alt="AT Digital" />
                     <p>
                         Your goal is our target. Not anything in between. We use 
                         online marketing platforms and tools to achieve single 
