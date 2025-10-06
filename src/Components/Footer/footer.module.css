@@ -1,0 +1,139 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #4F46E5;
+    padding-top: 40px;
+    padding-right: 80px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    color: white;   
+}
+
+/*Part 01*/
+
+.footInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footInfo .footCompany{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footCompany img{
+    width: 100%;
+    max-width: 226px;
+    height: auto;
+}
+
+.footCompany p{
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    width: 100%;
+    max-width: 413px;
+}
+
+.techServices{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 128px;
+}
+
+.tsItem{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.tsItem h3{
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.tsItem ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/*Part 02*/
+
+.footBottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.separator{
+    border-top: 1px solid white;
+    width: 100%;
+    max-width: 630px;
+}
+
+.footBottom .policyCon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.policyCon p{margin-bottom: 0;}
+
+@media(max-width: 1300px){
+    footer{
+        gap: 40px;
+        padding-top: 40px;
+        padding-right: 60px;
+        padding-bottom: 20px;
+        padding-left: 60px;
+    }
+    .techServices{
+        gap: 100px;
+    }
+}
+
+@media(max-width: 1000px){
+    footer{
+        gap: 40px;
+        padding-top: 40px;
+        padding-right: 40px;
+        padding-bottom: 20px;
+        padding-left: 40px;
+    }
+
+    .footInfo{
+        flex-direction: column;
+        gap: 60px;
+    }
+}
+
+@media(max-width: 600px){
+    footer{
+        padding-top: 40px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+
+    .footInfo{
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .techServices{
+        flex-direction: column;
+        gap: 40px;
+    }
+}

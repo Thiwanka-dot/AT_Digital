@@ -1,0 +1,112 @@
+.accordion-faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    width: 100%;
+    max-width: 846px;
+}
+
+.accordion-faq h2 {
+    color: #4F46E5;
+    font-size: 27px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+.accordion-faq .accordion-list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.accordion{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.accordion-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: none !important;
+    background-color: #FAF8FF !important;
+    border-radius: 7px !important;
+    overflow: hidden;
+    padding: 24px !important;
+    width: 846px;
+}
+
+.accordion-item:last-child {
+    margin-bottom: 0;
+}
+
+.accordion-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 22px !important;
+    color: #000;
+    background-color: #FAF8FF !important;
+    box-shadow: none !important;
+    padding: 0px !important;
+}
+.accordion-button::after {
+    display: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #4F46E5 !important;
+    background-color: #FAF8FF !important;
+}
+
+.accordion-icon {
+    margin-left: auto;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.accordion-icon::after {
+    content: "+";
+    margin-left: auto;
+    font-weight: 600;
+    font-size: 24px;
+    color: #000;
+}
+
+.accordion-button:not(.collapsed) .accordion-icon::after {
+    content: "−";
+    color: #4F46E5;
+}
+
+.accordion-body {
+    color: #6b7280;
+    font-size: 18px;
+    background-color: #FAF8FF !important;
+    padding: 0rem !important;
+    line-height: 30px;
+}
+
+@media(max-width: 1000px){
+    .accordion-item{
+        width: 100%;
+        max-width: 686px;
+    }
+}
+
+@media(max-width: 600px){
+    .accordion-item{
+        width: 100%;
+    }
+
+    .accordion-button{
+        font-size: 20px !important;
+    }
+
+    .accordion-body{
+        font-size: 16px !important;
+    }
+}

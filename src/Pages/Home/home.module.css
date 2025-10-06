@@ -1,0 +1,146 @@
+.Hero button,
+.Services button{
+    border-radius: 4px;
+}
+
+/*Hero Section*/
+
+.Hero{
+    position: relative;
+}
+
+.Hero img{
+    margin-top: 80px;
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+}
+
+.heroInfo{
+    position: absolute;
+    bottom: 45px;
+    left: 80px;
+    background: linear-gradient(90deg,#4DCA79,#1CBDDD);
+    color: #ffffff;
+    padding-top: 24px;
+    padding-bottom: 32px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 680px;
+}
+
+.heroInfo h1{
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -2%;
+}
+
+/*Services*/
+.Services{
+    padding: 90px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+}
+
+.serviceItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    gap: 108px;
+}
+
+.serviceItem img{
+    width: 100%;
+    max-width: 530px;
+    height: auto;
+
+}
+
+.serviceInfo{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    max-width: 550px;
+    text-align: left;
+}
+
+.serviceInfo h2{
+    color: #4F46E5;
+    font-size: 27px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+.serviceInfo p{
+    font-size: 16px;
+}
+
+@media (max-width: 1300px){
+    .heroInfo{
+        left: 60px;
+    }
+
+    .serviceItem{
+        gap: 20px;
+    }
+
+    .serviceItem img{
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 1000px){
+    .heroInfo{
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .Services{
+        padding: 50px 40px;
+        gap: 90px;
+    }
+
+    .serviceItem{
+        gap: 20px;
+    }
+    
+    .serviceItem img{
+        max-width: 300px;
+    }
+    
+}
+
+@media (max-width: 600px){
+    .heroInfo{
+        padding-top: 24px;
+        padding-bottom: 32px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .heroInfo h1{
+        font-size: 36px;
+    }
+
+    .serviceItem {
+        flex-direction: column;
+    }
+
+    .serviceItem:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .serviceInfo{
+        justify-content: center;
+    }
+}

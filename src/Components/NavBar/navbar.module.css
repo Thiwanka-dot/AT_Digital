@@ -1,0 +1,132 @@
+nav{
+    background-color: #4F46E5;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 80px;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    font-size: 14px;
+}
+
+.Logo img{
+    width: 100%;
+    height: auto;
+}
+
+.Links ul{
+    display: flex;
+    list-style: none;
+    color: white;
+    gap: 28px;
+    margin-bottom: 0;
+}
+
+.Links ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.toggleBtn {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.toggleBtn img{
+    width: 31px;
+    height: 24px;
+}
+
+/* Sidebar Menu */
+.menu {
+  display: none;
+}
+
+.menu.show {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 20000;
+  animation: slideIn 0.3s ease forwards;
+  padding: 20px;
+  position: fixed;
+}
+
+.closeBtn{
+    padding: 0;
+    background: none;
+    color: #000;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeBtn img{
+    width: 20px;
+    height: 20px;
+}
+
+.menu ul{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media(max-width:1000px){
+    nav{
+        padding: 26px 40px;
+    }
+}
+
+@media (max-width: 800px) {
+  .toggleBtn {
+    display: block;
+  }
+
+  .Links {
+    display: none;
+  }
+}
+
+@media(max-width:600px){
+    nav{
+        padding: 26px 20px;
+    }
+
+    .Logo img{
+        max-width: 152px;
+    }
+    
+}
